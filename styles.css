@@ -1,0 +1,295 @@
+/* Variabel */
+/* Ukuran besar untuk judul utama */
+/* Ukuran medium yang lebih besar */
+/* Ukuran kecil yang lebih besar */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px; /* Sesuaikan dengan tinggi header */
+  font-family: "roboto", sans-serif;
+  background-color: #ecf0f1;
+  color: #333;
+  line-height: 1.6; /* Menambahkan jarak antar baris */
+}
+
+/* Header and Navigation */
+header {
+  position: fixed; /* Menjadikan menu tetap di posisi atas */
+  top: 0; /* Jarak dari atas layar */
+  left: 0; /* Jarak dari kiri layar */
+  width: 100%; /* Memastikan menu mencakup seluruh lebar layar */
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000; /* Menjadikan elemen di atas elemen lainnya */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Menu diratakan di tengah */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9; /* Warna hover yang lebih gelap untuk tombol */
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-content h2 {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 3.8rem;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.profile-image {
+  width: 270px;
+  height: 285px;
+  border-radius: 50%;
+  border: 6px solid #3498db;
+}
+
+.bio {
+  text-align: left;
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 1.5rem; /* Menyesuaikan ukuran font di bagian "Tentang Saya" */
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: #ecf0f1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 40px;
+  font-size: 3.8rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item p {
+  font-size: 1.5rem; /* Menyesuaikan ukuran font di portfolio */
+  font-weight: bold;
+}
+
+/* Efek Hover pada Gambar di Portfolio */
+.portfolio-item img:hover {
+  transform: scale(1.1); /* Membesarkan gambar ketika hover */
+}
+
+/* Tombol "Lihat Lebih Banyak" */
+.more-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.more-button:hover {
+  background-color: #2980b9; /* Warna hover tombol */
+  transform: scale(1.05);
+}
+
+.cv-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.cv-section h1 {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+}
+
+.cv-viewer {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.cv-section .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cv-section .cta-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 3.8rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #2980b9; /* Warna hover tombol kirim */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  font-size: 1.4rem; /* Ukuran font lebih besar pada footer */
+}
+
+/*# sourceMappingURL=styles.css.map */
